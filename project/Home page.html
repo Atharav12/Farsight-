@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>User Login</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+			background-color: #f7f7f7;
+		}
+
+		h1 {
+			margin-top: 50px;
+			text-align: center;
+			font-size: 36px;
+			color: #333333;
+		}
+
+		p {
+			text-align: center;
+			font-size: 18px;
+			color: #666666;
+		}
+
+		.options {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			height: 70vh;
+		}
+
+		.option {
+			padding: 15px 25px;
+			font-size: 24px;
+			margin: 10px;
+			border: none;
+			background-color: #ffffff;
+			color: #333333;
+			cursor: pointer;
+			border-radius: 5px;
+			box-shadow: 0px 2px 5px #999999;
+			transition: all 0.2s ease-in-out;
+		}
+
+		.option:hover {
+			background-color: #333333;
+			color: #E0FFFF;
+			box-shadow: 0px 2px 5px #333333;
+		}
+	</style>
+</head>
+<body>
+	<h1>Welcome to Our Website</h1>
+	<p>Please choose an option:</p>
+	<div class="options">
+		<button class="option" onclick="window.location.href = 'loginpage.html'">Manufacturer</button>
+		<button class="option" onclick="window.location.href = 'projectsignup2.html'">Seller</button>
+		<button class="option" onclick="window.location.href = 'selectyourbrand.html'">User</button>
+	</div>
+	<body background="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUSEhIVFRUVFxUXFRUVFRUVFRUVFRUXFxUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDQ0NDg0NDisZFRkrKzctKy0rKystNy0rKy0rNys3LTctKysrNy0rLSsrKysrKysrKysrKysrKysrKysrK//AABEIALcBEwMBIgACEQEDEQH/xAAYAAEBAQEBAAAAAAAAAAAAAAACAQMABv/EABgQAQEBAQEAAAAAAAAAAAAAAAABEQIS/8QAGQEBAQEBAQEAAAAAAAAAAAAAAQAEAgMF/8QAFhEBAQEAAAAAAAAAAAAAAAAAAAER/9oADAMBAAIRAxEAPwDz8LRjtfWYWiwJSlIaQ4ylOUqtIUDS5pDSFAKENOTjPk+a6RynyEpQg40jKHKXLTVgSlOimhQNXSDiyhKspTSVQ1dSOLoyu0glGV1qRLBckeu0NXUDlXQ0tKKa4XFPDLoaWsLSa6BwooUFeak15KM5TjqOTh8s4fJBxpzWcOUppCjKU5SGkpSs5SlIaQpWerKQ1lKVnC0oylZylCMOVYGrCmmqGu1I10NXUi1dDV1DC1wqUUqwNWVJpK4dck8NFlGExNBQpQhQo5TjPk9KOFKHNLkhpDlZQ+SGmnKylLmkNJTlZSnCmkKVnqykNZVlCKQ0lLWcKFNJVlZylKQ0lWM5VSaauhFIPV0IulHK4YupE4ddqRLKEWJHrhcljxKwSY3uerAKFNC5ZwpSjhxnKWoNIUrOFHQaaUZlpTWdFKyhag1lKMuTlMR6UCFKQcq6EqlY01WcpSkHpQNLUDlWBq6UZM4WlFK4dWVAnJqSlHK7R1dSWuciTxkLRjoxNFhrKMUg5SlBZSmkKVnFhTWUpWcqykNNKVnzSlIaQ5WUp80pppSs9WVBrKsrOUoU00melKQcqyjKsKPSjOFKgeqBaQcq6Gu0ppK7Q1dSLXDq6kUq6MrtKP04HJPHEEWMbQayjqwjD1YMKUgtWUFiTSU5WUpSlGUoQogcpc1mUpDSU5WWlKU0hRnpSkNJSZylzSmnJaynRSkHKQSlpRRZRdqDTXBq6UeqEq6gWr6F0SKVYGlpS1yOSePijKrG0HFgSlKUWlBWFycqjroUR81nCiTTVlF2kNJVlDktSOFGZR0GkpSs9KUppF0IWoNJSlZyrpTTVlDVhDSVQiypHHRNcVhaujrkC1dDVlSN2jqlE5I5J5FZQhMj3JRWJFKUGLKRT10FZSDi6EIopSgFKkcKVmRRSnKzhEHpQIukNNKVnKUQaSrKzhlHKsoRYU0hRnKsqDTV1nq6UeqMUpV0dWVJV0ZViBSuFxTyUqxIrI0EsFZUjlUZXQg4sGERV0tF2oHFgxSjlWBKUSOFAhSkFpShKUpRykzhQgylZlCD0tZxZUmiyhKupGsoaspTRdZ6sqTR2jrtIOOHXaUbklci8mqOZHsspSiRSxdFYgULRiwooupFIpKMVAoUBSjlLQ0okUpc0IsIaFGcpFHKsorKQcrpRWJHKuhq6Q0jhdqRaWg5I9X0ErtKaSlrKFKkeqFrlqeXUXMz1KForKisLR1YUUXQ1YgcqyisKN0SLpGEsGO1A5SlBZSjlKBFlKOFKC6kelKzLSDXQ1ZSC0pQ1UmkUNUo3SjrkC1R1yRaTOL6SPXJrknmnRzmd6q6OcksVzkVhRziFWI5ItVzillXXOIpLEcgWlK5xSyk5ySxdRxRyuc4hdXVclVldquIXXOcUuujnILrnOSS1znJP//Z">
+</body>
+</html>
